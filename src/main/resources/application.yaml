@@ -1,0 +1,10 @@
+ktor:
+  deployment:
+    host: 0.0.0.0
+    port: 8080
+  application:
+    modules:
+      - com.com.ajayvempalle.tictactoe.SerializationKt.configureSerialization
+      - com.com.ajayvempalle.tictactoe.SecurityKt.configureSecurity
+      - com.com.ajayvempalle.tictactoe.WebsocketsKt.configureWebsockets
+      - com.com.ajayvempalle.tictactoe.RoutingKt.configureRouting
