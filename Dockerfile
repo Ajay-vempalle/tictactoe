@@ -6,8 +6,8 @@ COPY . .
 
 RUN chmod +x gradlew
 
-RUN ./gradlew build
+RUN ./gradlew installDist
 
 EXPOSE 8080
 
-CMD ["./gradlew", "run"]
+CMD ["./build/install/tictactoe/bin/tictactoe"]
